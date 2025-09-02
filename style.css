@@ -1,0 +1,11 @@
+h2 {
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+#vorteile {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 3px solid #2c3e50;
+  margin-top: 10px;
+}
