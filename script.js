@@ -6,3 +6,7 @@ function toggleVorteile() {
   const feld = document.getElementById("vorteile");
   feld.style.display = (feld.style.display === "none") ? "block" : "none";
 }
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}

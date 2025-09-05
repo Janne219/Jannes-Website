@@ -9,3 +9,32 @@ h2 {
   border-left: 3px solid #2a4a6a;
   margin-top: 10px;
 }
+
+/* Grunddesign */
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Button-Styling (optional) */
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+}
+
+body.dark button {
+  background-color: #333;
+  color: white;
+}
