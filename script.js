@@ -10,3 +10,18 @@ function toggleVorteile() {
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
+
+
+document.getElementById("suche").addEventListener("input", function () {
+  const suchbegriff = this.value.toLowerCase();
+  const eintraege = document.querySelectorAll("#liste li");
+
+  eintraege.forEach(function (eintrag) {
+    const text = eintrag.textContent.toLowerCase();
+    if (text.includes(suchbegriff)) {
+      eintrag.style.display = "list-item";
+    } else {
+      eintrag.style.display = "none";
+    }
+  });
+});
