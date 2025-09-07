@@ -3,12 +3,6 @@ h2 {
   color: #2c3e50;
 }
 
-#vorteile {
-  background-color: #cd2424;
-  padding: 10px;
-  border-left: 3px solid #2a4a6a;
-  margin-top: 10px;
-}
 
 /* Grunddesign */
 body {
@@ -48,4 +42,21 @@ input[type="text"] {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+nav {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007acc;
 }
