@@ -116,3 +116,42 @@ nav a,
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* UNTER-DROPDOWN */
+.dropdown-sub {
+  position: relative;
+}
+
+.dropdown-sub span {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-sub-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-sub:hover .dropdown-sub-content {
+  display: block;
+}
+
+.dropdown-sub-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-sub-content a:hover {
+  background-color: #f1f1f1;
+}
