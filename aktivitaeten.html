@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Aktivitäten filtern</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>Filter auswählen:</h2>
+
+<!-- Jahreszeiten -->
+<div>
+  <strong>Jahreszeit:</strong>
+  <button onclick="setFilter('saison', 'herbst')">Herbst</button>
+  <button onclick="setFilter('saison', 'winter')">Winter</button>
+  <button onclick="setFilter('saison', '')">Alle</button>
+</div>
+
+<!-- Ort -->
+<div>
+  <strong>Ort:</strong>
+  <button onclick="setFilter('ort', 'drinnen')">Drinnen</button>
+  <button onclick="setFilter('ort', 'draußen')">Draußen</button>
+  <button onclick="setFilter('ort', '')">Alle</button>
+</div>
+
+<!-- Stadtteil -->
+<div>
+  <strong>Stadtteil:</strong>
+  <button onclick="setFilter('stadtteil', 'altona')">Altona</button>
+  <button onclick="setFilter('stadtteil', 'eimsbüttel')">Eimsbüttel</button>
+  <button onclick="setFilter('stadtteil', '')">Alle</button>
+</div>
+
+<h2>Aktivitäten</h2>
+<div id="aktivitäten-liste">
+  <a href="hamburg/pumpkin.html"
+     class="aktivität"
+     data-saison="herbst"
+     data-ort="draußen"
+     data-stadtteil="altona">
+    🎃 Kürbisfarm
+  </a>
+
+  <a href="hamburg/museum.html"
+     class="aktivität"
+     data-saison="winter"
+     data-ort="drinnen"
+     data-stadtteil="innenstadt">
+    🏛️ Museum
+  </a>
+
+  <a href="hamburg/freibad.html"
+     class="aktivität"
+     data-saison="sommer"
+     data-ort="draußen"
+     data-stadtteil="eimsbüttel">
+    🏊 Freibad
+  </a>
+</div>
+
+</body>
+</html>
